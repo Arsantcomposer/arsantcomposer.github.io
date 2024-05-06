@@ -1,0 +1,531 @@
+* {
+    font-family: "Fjalla One", sans-serif;
+    color: gray;
+}
+body{
+    background: white;
+}
+
+
+.arsant {
+    color: black;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .arsant {
+        margin-left: 2%; 
+        margin-top: 7%; 
+    }
+}
+
+
+
+
+
+header {
+    font-family: "Fjalla One", sans-serif;
+    background: url("fondo.png");
+    padding: 3%;
+    background-size: cover;
+    background-position: -10%;
+}
+.redes {
+    margin-left: 30vh;
+    margin-top: -8vh;
+    display: flex;
+}
+
+.redes a {
+    text-decoration: none;
+    margin-left: 10vh;
+    color: rgb(48, 48, 48);
+    font-size: 4vh;
+    transition: transform 0.5s ease; 
+}
+
+.fa-youtube:hover {
+    transform: scale(1.2); 
+    color: rgb(255, 13, 13);
+}
+.fa-instagram:hover{
+    transform: scale(1.2); 
+    color: rgb(203, 0, 196);
+}
+.fa-spotify:hover{
+    transform: scale(1.2); 
+    color: rgb(40, 183, 40);
+}
+
+ul li {
+    
+    display: inline-block;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    padding-right: 0;
+    padding-bottom: 0; 
+}
+
+.nav {
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); 
+    font-size: 1vw; 
+    background: linear-gradient(to right, rgb(255, 254, 254, .3), rgb(203, 203, 203, .5),rgba(64, 64, 64, 1));
+    padding-left: 55%; 
+    text-align: right;
+    position: fixed;
+    top: 1%;
+    right: 0.5%; 
+    left: 1%;
+    margin: 1px;
+    z-index: 9999; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav  {
+        font-size: 2.5vw; 
+        padding-left: 1%;
+        right: 1.5%; 
+        left: 0%;
+        text-align: left; 
+    } 
+    .redes {
+        margin-left: 5px; 
+        margin-top: -5px; 
+    }
+    
+    .redes a {
+        margin-left: 5px; 
+        margin-right: 5px; 
+    }
+    
+   
+        
+   
+}
+   
+.a, .b, .c, .d, .e {
+    color: rgb(0, 0, 0); 
+    transition: color 1s ease; 
+}
+
+.a:hover, 
+.b:hover, 
+.c:hover, 
+.d:hover, 
+.e:hover {
+    color: rgb(255, 255, 255); 
+}
+
+
+
+
+.u {
+    margin: 10px auto; 
+    padding-left: 0px;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    bottom: 10%;
+}
+
+.bordes {
+    border: solid gray;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); 
+}
+
+.u li {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.u li figure {
+    padding: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.u li figure:hover {
+    transform: scale(1.1);
+}
+
+.u li figure:hover figcaption {
+    display: block;
+}
+
+.u li figcaption {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, .5);
+    padding: 15px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.sectionlive{
+    margin-left: 8%;
+}
+.descripcion{
+    text-align: center;
+}
+.bio {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255);
+    background-image:  url("IMG-20230412-WA0000 (1).jpg");
+    background-size: 57.5%;
+    background-repeat: no-repeat;
+    padding: 2%; 
+    padding-bottom: 0%;
+   
+    position: relative;
+    border: solid gray;
+    border-radius: 5px;
+    background-origin: content-box; 
+
+   
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); 
+}
+
+
+
+.contenedorspotify {
+    margin-left: 58%;
+    margin-right: 0%;
+    margin-top: -1%;
+   }
+   .contenedorvideoyoutube{
+    margin-left: 58%;
+    margin-right: 0%;
+    margin-top: -6%;
+   }
+
+@media screen and (max-width: 768px) {
+    .bio {
+        height: 270px;
+        background-size: 100%;
+        padding-bottom: 133%; 
+        position: relative; 
+        margin-bottom: 20%;
+    }
+    .contenedorspotify {
+        position: absolute; 
+        top: 23%; 
+        left: 2%; 
+        right: -58%;
+        transform: translate(-60%, 65%);
+        padding: 0; 
+        text-align: justify;
+    }
+    .contenedorvideoyoutube{
+        position: absolute; 
+        top: 32%; 
+        left: 2%; 
+        right: -58%;
+        transform: translate(-60%, 65%);
+        padding: 0; 
+        text-align: justify;
+    }
+}
+
+
+
+.disco,
+.fig {
+    margin-left: 10px;
+    padding: 1px;
+}
+
+
+.disco {
+    margin-left: 13%;
+    padding-left: 120px;
+    margin-top: 1px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.disco .discotamaño {
+    margin-left: -40px;
+    margin-bottom: -20px; 
+    width: 300px;
+    height: 300px;
+    overflow: hidden; 
+}
+
+
+
+
+.disco .discotamaño .fig {
+    padding: 1px;
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s; 
+}
+
+
+.disco .discotamaño .fig:hover {
+    transform: scale(1.1); 
+    z-index: 1; 
+}
+
+
+
+.disco .discotamaño .fig:hover .figcap {
+    display: block;
+}
+
+
+.disco .discotamaño .figcap {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, .7);
+    padding: 15px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .disco {
+        margin-left: 8%;
+        max-width:100%; 
+    }
+    .discotitulo {
+        margin: 5%; 
+
+    }
+    .disco .discotamaño {
+        margin-left: -100px;
+        margin-bottom: -300px; 
+        width: 600px;
+        height: 600px;
+    } 
+}
+   
+
+
+
+ol {
+    list-style-type: none;
+    line-height: 2.5;
+
+}
+.cattitulo{
+        border: solid gray;
+        margin-top: 7%;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 5%;
+        font-family: "Fjalla One", sans-serif;
+        background-color:rgba(255, 255, 255, 0.8);
+        padding: 30px; 
+        border-radius: 8px;
+        width: 350px;
+        height: 480px;
+      }
+.catcss::before {
+    content: "\2022"; /* Utiliza un punto como marcador */
+    color: #000000; /* Color del marcador */
+    font-weight: bold; /* Hace que el marcador sea negrita */
+    display: inline-block;
+    width: 1em; /* Ajusta el espacio entre el marcador y el texto */
+    margin-left: -1em; /* Mueve el texto hacia la derecha para alinearlo */
+}
+form {
+    border: solid gray;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    font-family: "Fjalla One", sans-serif;
+    background-color:rgba(255, 255, 255, 0.8);
+    padding: 30px; 
+    border-radius: 8px;
+    width: 350px;
+    height: 480px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #a9a9a9;
+  }
+.formulario{
+    margin-left: -6%;
+    margin-top: 5%;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    background-color:rgb(255, 255, 255);
+    padding: 1%;
+    padding-right: 80%;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); 
+    width: 300px;
+
+}
+.descripcioncontacto{
+    margin-left: 100%;
+    margin-top: 100%;
+}
+
+
+container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%; 
+    padding: 1%; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0%; 
+        padding: 0%; 
+    }
+}
+.containerform {
+    margin-top: 3%;
+    background: url("fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    display: flex;
+}
+
+.container form {
+    width: 30%;
+    padding: 20px;
+    border: solid gray;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #6f6f6f;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+
+.lorem {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin-top: -2%;
+    margin-left: 13%;
+    
+}
+
+.lorem p {
+    background-color:transparent;
+    color: #686868;
+    font-size: 13px;
+    text-align: center;
+}
+footer{
+    font-size: 90%;
+    background: black;
+    text-align: center;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+
+}
+.titulossecciones{
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-size: 120%;
+    margin-left: 12%;
+    background: linear-gradient(to right, rgb(255, 254, 254, .3), rgb(203, 203, 203, .5),rgba(64, 64, 64, 1));
+    margin: 0;
+    padding: 1%;
+    border: solid gray;
+    border-radius: 10px;
+
+}
+.cont{
+    margin-top: 100px;
+}
+.imagenlive{
+    width: 200px;
+    height: 300px;
+}
